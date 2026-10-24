@@ -23,3 +23,6 @@ form.addEventListener("submit", function (event) {
   message.style.color = "green";
   console.log("Login successful for:", username);
 });
+document.getElementById("showPass").addEventListener("change", function () {
+  document.getElementById("password").type = this.checked ? "text" : "password";
+});
